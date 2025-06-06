@@ -1,5 +1,5 @@
 from django.db import models
-autoslug import AutoSlugField
+from autoslug import AutoSlugField
 
 # Create your models here.
 
@@ -16,7 +16,7 @@ class BlogPost(models.Model):
     # Nome do autor da postagem
     author = models.CharField(max_length=100)
 
-    #Data e hora em que a postagem foi criada
+    # Data e hora em que a postagem foi criada
     created_at = models.DateTimeField(auto_now_add=True)
 
     update_at = models.DateTimeField(auto_now=True)
